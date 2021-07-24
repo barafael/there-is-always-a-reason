@@ -1,0 +1,15 @@
+{
+  "name": "there-is-always-a-reason",
+  "collaborators": [
+    "Rafael Bachmann <rafael.bachmann.93@gmail.com>"
+  ],
+  "version": "0.1.0",
+  "files": [
+    "there_is_always_a_reason_bg.wasm",
+    "there_is_always_a_reason.js",
+    "there_is_always_a_reason.d.ts"
+  ],
+  "module": "there_is_always_a_reason.js",
+  "types": "there_is_always_a_reason.d.ts",
+  "sideEffects": false
+}
