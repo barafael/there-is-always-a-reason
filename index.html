@@ -1,16 +1,26 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>There is always a reason.</title>
-  </head>
-  <body>
-    <script type="module">
-      import init, {alert_reason} from "./pkg/there_is_always_a_reason.js";
-      init()
-        .then(() => {
-          alert_reason()
-        });
-    </script>
-  </body>
+
+<head>
+  <meta charset="utf-8">
+  <title>There is always a reason.</title>
+</head>
+
+<body>
+  <button id="btnHitMe"" type=" button">Hit Me!</button>
+  <h3 id="lblGrund"></h3>
+
+  <script type="module">
+    import init, { get_grund } from "./pkg/there_is_always_a_reason.js";
+    init()
+      .then(() => {
+        document.getElementById("btnHitMe").onclick = function () { set_text(get_grund()) }
+      });
+
+    function set_text(text) {
+      document.getElementById("lblGrund").innerHTML = text
+    }
+  </script>
+</body>
+
 </html>

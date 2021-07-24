@@ -1,21 +1,17 @@
 /* tslint:disable */
 /* eslint-disable */
 /**
-* @param {string} name
+* @returns {string}
 */
-export function greet(name: string): void;
-/**
-*/
-export function alert_reason(): void;
+export function get_grund(): string;
 
 export type InitInput = RequestInfo | URL | Response | BufferSource | WebAssembly.Module;
 
 export interface InitOutput {
   readonly memory: WebAssembly.Memory;
-  readonly greet: (a: number, b: number) => void;
-  readonly alert_reason: () => void;
-  readonly __wbindgen_malloc: (a: number) => number;
-  readonly __wbindgen_realloc: (a: number, b: number, c: number) => number;
+  readonly get_grund: (a: number) => void;
+  readonly __wbindgen_add_to_stack_pointer: (a: number) => number;
+  readonly __wbindgen_free: (a: number, b: number) => void;
   readonly __wbindgen_exn_store: (a: number) => void;
 }
 

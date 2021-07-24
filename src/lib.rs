@@ -8,16 +8,8 @@ extern "C" {
 }
 
 #[wasm_bindgen]
-pub fn greet(name: &str) {
-    alert(&format!("Hello, {}!", name));
-}
-
-#[wasm_bindgen]
-pub fn alert_reason() {
-    alert(&format!(
-        "Grund: {}",
-        deutsche_bahn_delay_reasons::get_grund()
-    ))
+pub fn get_grund() -> String {
+    deutsche_bahn_delay_reasons::get_grund().to_string()
 }
 
 #[cfg(test)]
