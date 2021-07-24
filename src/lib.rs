@@ -3,11 +3,6 @@ use wasm_bindgen::prelude::*;
 use deutsche_bahn_delay_reasons;
 
 #[wasm_bindgen]
-extern "C" {
-    pub fn alert(s: &str);
-}
-
-#[wasm_bindgen]
 pub fn get_grund() -> String {
     deutsche_bahn_delay_reasons::get_grund().to_string()
 }
