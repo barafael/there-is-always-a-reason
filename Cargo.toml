@@ -10,8 +10,9 @@ edition = "2024"
 crate-type = ["cdylib"]
 
 [dependencies]
-deutsche-bahn-delay-reasons = "0.2.0"
-wasm-bindgen = "0.2.74"
+deutsche-bahn-delay-reasons = "1"
+wasm-bindgen = "0.2"
+getrandom = { version = "0.3", features = ["wasm_js"] }
 
 [profile.release]
 lto = true
