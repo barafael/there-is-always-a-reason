@@ -1,7 +1,9 @@
 /* tslint:disable */
 /* eslint-disable */
 export const memory: WebAssembly.Memory;
-export function get_grund(a: number): void;
-export function __wbindgen_add_to_stack_pointer(a: number): number;
-export function __wbindgen_free(a: number, b: number): void;
-export function __wbindgen_exn_store(a: number): void;
+export const get_grund: () => [number, number];
+export const __wbindgen_exn_store: (a: number) => void;
+export const __externref_table_alloc: () => number;
+export const __wbindgen_export_2: WebAssembly.Table;
+export const __wbindgen_free: (a: number, b: number, c: number) => void;
+export const __wbindgen_start: () => void;

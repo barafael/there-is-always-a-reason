@@ -1,5 +1,6 @@
 {
   "name": "there-is-always-a-reason",
+  "type": "module",
   "collaborators": [
     "Rafael Bachmann <rafael.bachmann.93@gmail.com>"
   ],
@@ -9,7 +10,9 @@
     "there_is_always_a_reason.js",
     "there_is_always_a_reason.d.ts"
   ],
-  "module": "there_is_always_a_reason.js",
+  "main": "there_is_always_a_reason.js",
   "types": "there_is_always_a_reason.d.ts",
-  "sideEffects": false
+  "sideEffects": [
+    "./snippets/*"
+  ]
 }
